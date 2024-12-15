@@ -1,36 +1,663 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- upto 2 directory depth-->
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wissem Yaakoubi Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
-        header { text-align: center; background: #6200ea; color: white; padding: 2rem; }
-        section { padding: 2rem; }
-        .project { margin-bottom: 1.5rem; }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wissem Yaakoubi</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" media="print"
+    onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&amp;display=swap" />
+  </noscript>
+  <link href="./css/timeline.css" rel="stylesheet">
+  <link href="./css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
+  <link href="./css/bootstrap-icons/bootstrap-icons.css?ver=1.2.0" rel="stylesheet">
+  <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
+  <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
+  <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+  <noscript>
+    <style type="text/css">
+      [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+      }
     </style>
+  </noscript>
 </head>
-<body>
-    <header>
-        <h1>Wissem Yaakoubi</h1>
-        <p>Embedded Systems Engineer | Innovator</p>
-    </header>
-    <section>
-        <h2>About Me</h2>
-        <p>I specialize in Embedded Linux, CAN bus communication, and custom Linux kernel development. Let’s innovate together!</p>
-    </section>
-    <section>
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Real-Time GNSS Tracker</h3>
-            <p>GPS and 4G integration for tracking systems. <a href="https://github.com/wissemyaakoubi/gnss-tracker">View Project</a></p>
+
+<body id="top">
+ <div id="loader"></div>
+
+  <header class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="header-nav" role="navigation">
+      <div class="container"><a class="link-dark navbar-brand site-title mb-0" href="#">Wissem Yaakoubi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-2">
+            <li class="nav-item"><a class="nav-link" href="#top">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="#timeline">Experience</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+          </ul>
         </div>
-        <div class="project">
-            <h3>CAN Bus Analyzer</h3>
-            <p>Debugging and monitoring CAN traffic. <a href="https://github.com/wissemyaakoubi/can-analyzer">View Project</a></p>
+      </div>
+    </nav>
+  </header>
+  <div class="page-content">
+    <div id="content">
+      <header>
+        <div class="cover bg-light">
+          <div class="container px-3">
+            <div class="row">
+              <div class="col-lg-6 p-2"><img class="img-scale-fade-in" src="images/pic.jpg" alt="hello" height="300" width="300" /></div>
+              
+              <div class="col-lg-6" style="display: flex;align-items: center;">
+                <div class="mt-5">
+                  <p class="lead text-uppercase mb-1">Hello there!</p>
+                  <h1 class="intro-title marker" data-aos="fade-left" data-aos-delay="50">I’m Wissem Yaakoubi</h4>
+                  <p class="lead fw-normal mt-3" data-aos="fade-up" data-aos-delay="100"> - Embedded Systems Engineer<br> - Embedded Linux Enthusiast </p>
+                  <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
+                    <nav role="navigation">
+                      <ul class="nav justify-content-left">
+                        <ul class="nav justify-content-center">
+                          <li class="nav-item">
+                              <a class="nav-link" href="https://www.linkedin.com/in/wissem-yaakoubi-814243204/" title="LinkedIn" target="_blank">
+                                  <i class="fab fa-linkedin fa-lg"></i>
+                                  <span class="menu-title sr-only">LinkedIn</span>
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="https://github.com/wissem-yaakoubi" title="GitHub" target="_blank">
+                                  <i class="fab fa-github fa-lg"></i>
+                                  <span class="menu-title sr-only">GitHub</span>
+                              </a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="mailto:wissemyakoubi99@gmail.com" title="Email" target="_blank">
+                            <i class="fas fa-envelope fa-lg"></i>
+                            <span class="menu-title sr-only">Email</span>
+                          </a>
+                        </li>
+                        
+                      </ul>
+                      
+                    </nav>
+                  </div>
+                  <div class="mt-3" data-aos="fade-up" data-aos-delay="200"><a
+                      class="btn btn-primary shadow-sm mt-1 hover-effect" href="#about">Learn more</a>
+                        </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+        <div class="wave-bg"></div>
+      </header>
+      <div class="section pt-4 px-3 px-lg-4" id="about">
+        <div class="container-narrow">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="h4 my-2">ABOUT ME</h2>
+              
+              <p>
+                I'm an embedded systems engineer with expertise in building customized operating systems, working with Linux kernels ,u-boot and Yocto Project, and developing C-based software for embedded boards like STM32.<br><br> 
+                
+                🧑‍💻 Embedded Linux Enthusiast<br>
+                
+             🔧 Skilled in low-level development, real-time systems, and embedded hardware/software integration.<br>
+                
+             📜 Experienced in configuring and optimizing Linux for embedded platforms.<br>
+             🛠️ Passionate about microcontroller programming and developing efficient firmware solutions.<br>
+                
+             ⚡ Dedicated to solving complex challenges in embedded system design and performance.<br>
+              </p>
+              
+                <!-- I speak <b>English</b>, <b>French</b>, and <b>Spanish</b>, which helps me work well in diverse teams.</p> -->
+              <div class="row mt-3">
+                <div class="row text-center">
+                  <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/wissem-yaakoubi-814243204/" title="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                            <span class="menu-title sr-only">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/wissem-yaakoubi" title="GitHub" target="_blank">
+                            <i class="fab fa-github fa-lg" ></i>
+                            <span class="menu-title sr-only">GitHub</span>
+                        </a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mailto:wissemyakoubi99@gmail.com" title="Email" target="_blank">
+                      <i class="fas fa-envelope fa-lg"></i>
+                      <span class="menu-title sr-only">Email</span>
+                    </a>
+                  </li>
+                  
+                </ul>
+                </div>
+               
+               
+              </div>
+            </div>
+            <div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img
+                class="avatar img-fluid mt-2" src="images/portrait/coding.svg" width="350" height="350"
+                alt="Walter Patterson" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="section px-3 px-lg-4 pt-5" id="services">
+        <div class="container-narrow">
+          <div class="text-center mb-5">
+            <h2 class="marker marker-center">WHAT I OFFER</h2>
+          </div>
+          <div class="text-center">
+            <p class="mx-auto mb-3" style="max-width:920px">As an embedded systems engineer,
+               I design and develop efficient systems that seamlessly integrate hardware and software. 
+               I offer expertise in creating reliable embedded solutions that enhance device functionality and performance.</p>
+          </div>
+          <div class="row myrow py-3" style="max-width:1200px">
+            <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100"><img class="mb-2"
+                src="images\services\ml.png" width="96" height="96" alt="AI Modeling" />
+              <div class="h6">Customized OS Development</div>
+            </div>
+            <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200"><img class="mb-2"
+                src="images/services/nlp.png" width="96" height="96"
+                alt="nlp" />
+              <div class="h6">Firmware Development</div>
+            </div>
+            
+            <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="400"><img class="mb-2"
+                src="images/services/genai.png" width="96" height="96" alt="gen-ai" />
+              <div class="h6">Hardware-Software Integration</div>
+            </div>
+
+            <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300"><img class="mb-2"
+              src="images/services/data_vizualization.png" width="96" height="96"
+              alt="Data Visualization and Reporting" />
+            <div class="h6">Real-Time Systems</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section px-3 px-lg-4 pt-5" id="skills">
+        <div class="container-narrow">
+          <div class="text-center mb-5">
+            <h2 class="marker marker-center">SKILLS</h2>
+          </div>
+          <div class="text-center">
+            <p class="mx-auto mb-3" style="max-width:600px; ">With a knack for quick learning, I focus on mastering many skills and technologies needed for Embedded Systems.</p>
+          </div>
+          <!-- <div class="bg-light p-3">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="py-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="skill-name">Python</span>
+                            <span class="badge bg-primary text-white">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="skill-name">SQL</span>
+                            <span class="badge bg-primary text-white">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="skill-name">C / C++</span>
+                            <span class="badge bg-primary text-white">Proficient</span>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="skill-name">Version Control (Git / GitHub)</span>
+                            <span class="badge bg-primary text-white">Proficient</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-md-2">
+                    <div class="py-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="skill-name">Scikit-Learn</span>
+                            <span class="badge bg-primary text-white">Proficient</span>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="skill-name">TensorFlow</span>
+                            <span class="badge bg-warning text-dark">Skilled</span>
+                        </div>
+                    </div>
+                    
+                    <div class="py-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="skill-name">SpaCy, NLTK</span>
+                            <span class="badge bg-warning text-dark">Skilled</span>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <span class="skill-name">LangChain</span>
+                            <span class="badge bg-warning text-dark">Skilled</span>
+                        </div>
+                </div>
+              </div>
+            </div> 
+          </div> -->
+        </div>
+      </div>
+
+
+      <div class="section px-3 px-lg-4 pt-5" id="clients">
+        <div class="container-narrow" style="margin-top: -80px; margin-bottom: 5%">
+          <!-- <div class="text-center mb-5">
+            <h2 class="marker marker-center">CLIENTS & COLLABORATIONS</h2>
+          </div>
+          <div class="text-center">
+            <p class="mx-auto mb-3" style="max-width:600px">I have a proven track record of delivering high-quality data
+              engineering solutions for a diverse range of clients.</p>
+          </div> -->
+          <div class="row myrow" style="max-width:1200px" data-aos="fade" data-aos-delay="300">
+
+            <div class="myCarousel">
+              <div class="slider">
+                <div class="slide-track">
+                  <!-- <div class="slide">
+                    <img src="images/clients/gcloud.svg" height="80" width="80" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/vertexai.svg" height="80" width="80" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/bigquery.svg" height="80" width="80" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/looker-icon.svg" height="80" width="80" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/platform.svg" height="80" width="80" alt="" />
+                  </div> -->
+                  <div class="slide">
+                    <img src="images/clients/python.svg" height="80" width="80" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/DS-CATIA-Logo.png" height="80" width="80" alt="" />
+                  </div>
+
+                  <div class="slide">
+                    <img src="images/clients/C.png" height="80" width="80" alt="" />
+                  </div>
+
+                  <div class="slide">
+                    <img src="images/clients/buildroot.png" height="80" width="80" alt="" />
+                  </div>
+                  
+                  <!-- <div class="slide">
+                    <img src="images/clients/huggingface.svg" height="80" width="80" alt="" />
+                  </div> -->
+
+                  <div class="slide">
+                    <img src="images/clients/stm32cubeide.png" height="80" width="180" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/yocto.svg" height="100" width="180" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/ubuntu.png" height="80" width="100" alt="" />
+                  </div> 
+                  <div class="slide">
+                    <img src="images/clients/cpp.svg" height="90" width="90" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/Linux.svg" height="70" width="70" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/freeRTOS.png" height="80" width="180" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/UBoot.svg" height="80" width="80" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/doxygen.svg" height="80" width="180" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/git.svg" height="80" width="80" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/qt.png" height="80" width="80" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/cpp.svg" height="90" width="90" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/git.svg" height="80" width="80" alt="" />
+                  </div>
+                  <!--
+          <div class="slide">
+          <img src="images/clients/" height="150" width="250" alt="" />
+          </div>
+          <div class="slide">
+          <img src="images/clients/" height="150" width="250" alt="" />
+          </div>
+          <div class="slide">
+          <img src="images/clients/" height="150" width="250" alt="" />
+          </div>
+          <div class="slide">
+          <img src="images/clients/" height="150" width="250" alt="" />
+          </div>
+          <div class="slide">
+          <img src="images/clients/" height="150" width="250" alt="" />
+          </div>
+          <div class="slide">
+          <img src="images/clients/" height="150" width="250" alt="" />
+          </div>
+          -->
+                </div>
+              </div>
+            </div>
+            <!--
+      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
+        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</span></div>
+        <div class="d-flex justify-content-end align-items-end">
+          <div class="text-end me-2">
+            <div class="fw-bolder">Aiyana</div>
+            <div class="text-small">CEO / Web Design Company</div>
+          </div><img class="me-md-3 rounded" src="images/testimonials/client1.jpg" width="96" height="96" alt="client 1"/>
+        </div>
+      </div>
+      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="300">
+        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter displays exemplary professionalism and is able to take on challenges. He learns quickly and is an asset to any team.</span></div>
+        <div class="d-flex justify-content-end align-items-end">
+          <div class="text-end me-2">
+            <div class="fw-bolder">Alexander</div>
+            <div class="text-small">CEO / Web Design Company</div>
+          </div><img class="me-md-3 rounded" src="images/testimonials/client2.jpg" width="96" height="96" alt="client 1"/>
+        </div>
+      </div>
+      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="200">
+        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
+        <div class="d-flex justify-content-end align-items-end">
+          <div class="text-end me-2">
+            <div class="fw-bolder">Ariya</div>
+            <div class="text-small">Web Developer</div>
+          </div><img class="me-md-3 rounded" src="images/testimonials/client3.jpg" width="96" height="96" alt="client 1"/>
+        </div>
+      </div>
+      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="400">
+        <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Walter is a great co-worker and problem solver. He is quick to extend his helping hand and makes a good team player.</span></div>
+        <div class="d-flex justify-content-end align-items-end">
+          <div class="text-end me-2">
+            <div class="fw-bolder">Braiden</div>
+            <div class="text-small">Web Designer</div>
+          </div><img class="me-md-3 rounded" src="images/testimonials/client4.jpg" width="96" height="96" alt="client 1"/>
+        </div>
+      </div>
+    </div>
+  -->
+          </div>
+        </div>
+      </div>
+<!--
+********************** Hardware Platforms Section *******************      
+-->
+  
+            <div class="section px-3 px-lg-4 pt-5" id="Hardware">
+        <div class="container-narrow">
+          <div class="text-center mb-5">
+            <h2 class="marker marker-center">Hardware Platforms</h2>
+          </div>
+          <div class="text-center">
+            <p class="mx-auto mb-3" style="max-width:600px; ">With a knack for quick learning, I focus on Working with many Hardware Platforms and Architectures needed for Embedded Systems.</p>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <div class="section px-3 px-lg-4 pt-5" id="clients">
+        <div class="container-narrow" style="margin-top: -80px; margin-bottom: 5%">
+          <div class="row myrow" style="max-width:1200px" data-aos="fade" data-aos-delay="300">
+
+            <div class="myCarousel">
+              <div class="slider">
+                <div class="slide-track">
+                  <div class="slide">
+                    <img src="images/clients/st-stm32-logo.svg" height="80" width="80" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/RENESAS.png" height="80" width="180" alt="" />
+                  </div>
+
+                  <div class="slide">
+                    <img src="images/clients/nxp.png" height="80" width="180" alt="" />
+                  </div>
+
+                  <div class="slide">
+                    <img src="images/clients/rasspberrypi.svg" height="120" width="120" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/Arduino_Logo.svg" height="80" width="120" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/st-stm32-logo.svg" height="80" width="80" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/RENESAS.png" height="80" width="180" alt="" />
+                  </div>
+
+                  <div class="slide">
+                    <img src="images/clients/nxp.png" height="80" width="180" alt="" />
+                  </div>
+
+                  <div class="slide">
+                    <img src="images/clients/rasspberrypi.svg" height="120" width="120" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/Arduino_Logo.svg" height="80" width="120" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/st-stm32-logo.svg" height="80" width="80" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/RENESAS.png" height="80" width="180" alt="" />
+                  </div>
+
+                  <div class="slide">
+                    <img src="images/clients/nxp.png" height="80" width="180" alt="" />
+                  </div>
+
+                  <div class="slide">
+                    <img src="images/clients/rasspberrypi.svg" height="120" width="120" alt="" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/clients/Arduino_Logo.svg" height="80" width="120" alt="" />
+                  </div>
+
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section px-3 px-lg-4 pt-5" id="timeline" data-aos="fade-up" data-aos-delay="500">
+        <div class="container-narrow">
+            <div class="text-center mb-5">
+                <h2 class="marker marker-center">EXPERIENCE</h2>
+            </div>
+            <div class="text-center">
+                <p class="mx-auto mb-3" style="max-width:650px">
+                    I have over 2 years of experience working on many projects and technologies.
+                    <br> Here is a timeline of my key experiences.
+                </p>
+            </div>
+        </div>
+        <div style="text-align: center;">
+          <a class="btn btn-primary shadow-sm mt-1 hover-effect" href="./resume/Wissem_s_Resume.pdf" target="_blank">Download CV</a>
+      </div>
+        <br>
+        <div class="timeline">
+            <div class="experience left">
+                <div class="content">
+        
+                      <div class="role">Embedded Systems Engineer</div>
+                    
+                      <div class="company">@PixiiMotors</div>
+                      <div class="date_container">Sept 2023 - Present</div>
+                      <div class="location">Tunis, Tunisia</div>
+                    
+                    <ul>
+                        <li>Built a customized Operating System for an E-scooter instrument cluster on i.MX8 using Yocto Project</li>
+                        <li>Implemented Bluetooth pairing functionality with headsets for audio playback and recording.</li>
+                        <li>Integrated 4G connectivity and GPS by adding kernel drivers and scripts for reliable connections and precise location accuracy.</li>
+                        <li>Added a Voice Chat-Bot feature by managing dependencies and ensuring integration within the OS.</li>
+                        <li>Built an SDK for cross-compiling Qt applications and C/C++ programs using the Yocto Project.</li>
+                        <li>Achieved a 63% reduction in OS boot time ( 8 seconds) through U-Boot, kernel and UserSpace optimization.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience right">
+                <div class="content">
+                    <div class="role">Embedded Systems Intern</div>
+                    <div class="company">@PixiiMotors</div>
+                    <div class="date_container">Feb 2023 - Aug 2023</div>
+                    <div class="location">Tunis, Tunisia</div>
+                    <ul>
+                        <li>Developed a real-time STM32 program to monitor CAN messages from scooter components.</li>
+                        <li>Reduced boot time on Raspberry Pi by optimizing Kernel and rootfs Buildroot configurations.</li>
+                        <li>Documented the firmware using Doxygen and respect the MISRA C standard.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience left">
+                <div class="content">
+                    <div class="role">Embedded Systems Engineer</div>
+                    <div class="company">@Horizop Energy</div>
+                    <div class="date_container">Aug 2022 - Oct 2022</div>
+                    <div class="location">Netherlands, NLD</div>
+                    <ul>
+                        <li>Research and development of electrical vehicle charging station.</li>
+                        <li>Design and development of dynamic load balancer to no over-voltage the grid.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience right">
+                <div class="content">
+                    <div class="role">Embedded Systems Intern</div>
+                    <div class="company">@PixiiMotors</div>
+                    <div class="date_container">Jun 2022 - Aug 2022</div>
+                    <div class="location">Tunis, Tunisia</div>
+                    
+                    <ul>
+                        <li>Developed a lighting control system for e-scooters based on STM32 and WS2812B controlled the color through
+                          PWM with changed duty cycles.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-title">
+              <span>PROJECTS</span>
+          </div>
+            <div class="experience left">
+                <div class="content">
+                    <div class="date_container">Mar 2022 - Jun 2022</div>
+                    <div class="role">Smart Meter</div>
+                    <p class="project-type">Personal Project</p>
+                    <ul>
+                        <li>Design PCB of acquisition board to copy the waveform and features of voltage and current signal (Altium).</li>
+                        <li>Extraction of the first 10 harmonics, calculate the THD and showing in real-time in the screen using numeric filter</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience right">
+              <div class="content">
+                  <div class="date_container">Feb 2022 - Mar 2022</div>
+                  <div class="role">Self-Balancing Robot</div>
+                  <p class="project-type">Personal Project</p>
+                  <ul>
+                      <li>Design and identification of different parameter (inertia, Gravity) of the robot (Catia V5).</li>
+                      <li>Controlled DC motor torque using PID control, integrated IMU data with Kalman filter.</li>
+                  </ul>
+              </div>
+          </div>
+          
+        </div>
+    </div>
+    
+    
+    
+      
+    
+      <footer class="pt-4 pb-4 text-center bg-light">
+        <div class="container">
+          <div class="my-3">
+            <div class="h4">Wissem Yaakoubi</div>
+            <p>Embedded Systems Engineer</p>
+            <div class="social-nav">
+              <nav role="navigation">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://www.linkedin.com/in/wissem-yaakoubi-814243204/" title="LinkedIn" target="_blank">
+                          <i class="fab fa-linkedin fa-lg"></i>
+                          <span class="menu-title sr-only">LinkedIn</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://github.com/wissem-yaakoubi" title="GitHub" target="_blank">
+                          <i class="fab fa-github fa-lg"></i>
+                          <span class="menu-title sr-only">GitHub</span>
+                      </a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mailto:wissemyakoubi99@gmail.com" title="Email" target="_blank">
+                    <i class="fas fa-envelope fa-lg"></i>
+                    <span class="menu-title sr-only">Email</span>
+                  </a>
+                </li>
+                
+                
+                
+              </ul>
+              
+                
+              </nav>
+            </div>
+          </div>
+          <div class="text-small text-secondary">
+            <div class="mb-1">&copy; WISSEM YAAKOUBI, All rights reserved 2024</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i
+          class="fas fa-angle-up fa-x"></i></span></a></div>
+  <script src="./scripts/imagesloaded.pkgd.min.js?ver=1.2.0"></script>
+  <script src="./scripts/masonry.pkgd.min.js?ver=1.2.0"></script>
+  <script src="./scripts/BigPicture.min.js?ver=1.2.0"></script>
+  <script src="./scripts/purecounter.min.js?ver=1.2.0"></script>
+  <script src="./scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
+  <script src="./scripts/aos.min.js?ver=1.2.0"></script>
+  <script src="./scripts/main.js?ver=1.2.0"></script>
+
 </body>
+
 </html>
